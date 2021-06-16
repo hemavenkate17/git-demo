@@ -1,0 +1,7 @@
+C:\training\day 5 after project\Exploresolution\Explore\bin\Debug\Explore.exe.config
+C:\training\day 5 after project\Exploresolution\Explore\bin\Debug\Explore.exe
+C:\training\day 5 after project\Exploresolution\Explore\bin\Debug\Explore.pdb
+C:\training\day 5 after project\Exploresolution\Explore\obj\Debug\Explore.csproj.CoreCompileInputs.cache
+C:\training\day 5 after project\Exploresolution\Explore\obj\Debug\Explore.exe
+C:\training\day 5 after project\Exploresolution\Explore\obj\Debug\Explore.pdb
+C:\training\day 5 after project\Exploresolution\Explore\obj\Debug\Explore.csproj.AssemblyReference.cache

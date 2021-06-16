@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BookDbModelStoreContainer" CdmEntityContainer="BookDbEntities">
+    <EntitySetMapping Name="Movies">
+      <EntityTypeMapping TypeName="BookDbModel.Movy">
+        <MappingFragment StoreEntitySet="Movies">
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="Movies" ColumnName="Movies" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

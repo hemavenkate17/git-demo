@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tr style="background-color:aqua">
+                <td>Technique</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>HardCoded Data</td>
+                <td>
+                    @Html.DropDownList("MovieList", new List<SelectListItem>
+               {
+                   new SelectListItem{Text="Roman Holiday",Value="1"},
+                   new SelectListItem{Text="Pretty Women",Value="2"},
+                   new SelectListItem{Text="Great Escape",Value="3"},
+                   new SelectListItem{Text="Boy with Stripped Pyjama",Value="4"},
+                   new SelectListItem{Text="Memories",Value="5"},
+                   new SelectListItem{Text="12 Angry Men",Value="6"},
+                   new SelectListItem{Text="Love Story 1972",Value="7"},
+               })
+                </td>
+            </tr>
+            <tr>
+                <td>ViewBag Data</td>
+                <td>@Html.DropDownList("MoviesList", (IEnumerable<SelectListItem>)ViewBag.MovList)</td>
+            </tr>
+            <tr>
+                <td>Data from ViewData </td>
+                <td>@Html.DropDownList("MoviesList1", (IEnumerable<SelectListItem>)ViewData["MovList"])</td>
+            </tr>
+            <tr>
+                <td>Data from TempData </td>
+                <td>@Html.DropDownList("MoviesList2", (IEnumerable<SelectListItem>)TempData.Peek("MovTList"))</td>
+            </tr>
+            <tr>
+                <td>Data from Enum </td>
+                <td>@Html.DropDownList("MoviesList3", new SelectList(ViewBag.EnuMovList, "Value", "Text"))</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

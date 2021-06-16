@@ -1,0 +1,46 @@
+﻿@model System.Data.DataTable
+@using System.Data
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HomeAuthor</title>
+</head>
+<body>
+    <div>
+        <form method="post" name="Display">
+            <h2>Home</h2>
+            @Html.ActionLink("Add New Author", "CreateAuthor");
+            @{
+                if (Model.Rows.Count > 0)
+                {
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <td>AuthorID</td>
+                                <td>AuthorName</td>
+
+                            </tr>
+                        </thead>
+                        @foreach (DataRow dr in Model.Rows)
+                        {
+                            <tr>
+                                <td>@dr["AuthorID"].ToString()</td>
+                                <td>@dr["AuthorName"].ToString()</td>
+                                
+                            </tr>
+
+                        }
+                    </table>
+                }
+
+            }
+        </form>
+    </div>
+</body>
+</html>
